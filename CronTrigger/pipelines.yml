@@ -18,7 +18,9 @@ pipelines:
         configuration:
           inputResources:
             - name: gitrepo_trigger
+              newVersionOnly: false            
             - name: cron_trigger
+              newVersionOnly: false
         execution:
           onExecute:
             - printenv
