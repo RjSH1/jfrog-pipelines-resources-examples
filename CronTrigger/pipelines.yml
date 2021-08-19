@@ -19,6 +19,7 @@ pipelines:
           inputResources:
             - name: gitrepo_trigger
             - name: cron_trigger
+              trigger: false
         execution:
           onExecute:
             - printenv
