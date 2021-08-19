@@ -18,7 +18,6 @@ pipelines:
         configuration:
           inputResources:
             - name: gitrepo_trigger
-          inputResources:
             - name: cron_trigger
         execution:
           onExecute:
