@@ -20,7 +20,7 @@ pipelines:
             - name: gitrepo_trigger
 	      trigger: false            
             - name: cron_trigger
-	      trigger: false 
+	      trigger: false #
         execution:
           onExecute:
             - printenv
