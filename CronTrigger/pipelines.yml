@@ -17,10 +17,10 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: gitrepo_trigger
-	      trigger: false
-            - name: cron_trigger
-	      trigger: false
+          - name: gitrepo_trigger
+	    trigger: false
+          - name: cron_trigger
+	    trigger: false
         execution:
           onExecute:
             - printenv
