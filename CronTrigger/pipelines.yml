@@ -3,6 +3,12 @@ resources:
     type: CronTrigger
     configuration:
       interval: '*/5 * * * *'     # Every 5 minutes
+      
+  - name: gitrepo_trigger
+    type: GitRepo
+    configuration:
+      gitProvider: myGithub
+      path: RjSH1/jfrog-pipelines-resources-examples      
 
 pipelines:      
   - name: pipeline_scheduled_triggers
@@ -10,6 +16,8 @@ pipelines:
       - name: step_1
         type: Bash
         configuration:
+          inputResources:
+            - name: gitrepo_trigger
           inputResources:
             - name: cron_trigger
         execution:
