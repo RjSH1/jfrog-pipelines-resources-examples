@@ -11,7 +11,8 @@ resources:
     configuration:
       sourceArtifactory: art
       buildName: SampleApp
-      buildNumber: 1          
+      # buildNumber: 1
+      buildNumber: ${run_number}
 pipelines:  
   - name: basic_pipeline
     configuration:
