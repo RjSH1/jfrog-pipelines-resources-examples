@@ -5,7 +5,7 @@ resources:
       source: s_artifactory
       fileLocation: example-repo-local/setup/help # optional
       fileName: something.txt # optional
-	  fileDateTime: 19/12/19 # optional
+      fileDateTime: 19/12/19 # optional
 
 
 pipelines:
