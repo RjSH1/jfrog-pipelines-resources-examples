@@ -5,8 +5,8 @@ resources:
       sourceArtifactory: s_artifactory
       pattern: "test-local/setup/"
       recursive: false
-	  buildName: pipelines_api
-      	  buildNumber: 1@3
+      buildName: pipelines_api
+      buildNumber: 1@3
 
 pipelines:
   - name: pipelines_FLSPEC_0010
