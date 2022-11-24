@@ -14,7 +14,7 @@ resources:
       # buildNumber: 1
       buildNumber: 1357924680
 pipelines:  
-  - name: basic_pipeline
+  - name: BuildInfo_Pipeline
     configuration:
       environmentVariables:
         readOnly:
