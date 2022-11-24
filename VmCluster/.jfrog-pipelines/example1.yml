@@ -2,7 +2,7 @@ resources:
    - name: vmCluster_1
      type: VmCluster
      configuration:
-       sshKey: SR_SSHKEYS
+       sshKey: ACME_SSHKEY
        targets:
          - 1.2.3.4
 
