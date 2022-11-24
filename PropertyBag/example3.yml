@@ -9,7 +9,7 @@ resources:
       runNumber: 0
 
 pipelines:
-  - name: pipeline_S_WF_010
+  - name: PropertyBag_Pipeline_2
     steps:
       - name: S_WF_010_trigger
         type: Bash
