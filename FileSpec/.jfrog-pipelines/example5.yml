@@ -17,5 +17,6 @@ pipelines:
             - name: Get_Files
         execution:
           onExecute:
-            - cat $HOME/.jfrog/logs/jfrog-cli*
-            - ls
+            #- cat $HOME/.jfrog/logs/jfrog-cli*
+            #- ls
+            - write-output "executing step..."
