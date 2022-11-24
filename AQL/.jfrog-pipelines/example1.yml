@@ -16,7 +16,7 @@ resources:
           output: test2
 
 pipelines:
-  - name: pipelines_ART_1
+  - name: AQL_Pipeline
     steps:
       - name: step_ART_1
         type: PowerShell
