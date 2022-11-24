@@ -3,7 +3,7 @@ resources:
     type: Image
     configuration:
       registry: ACMEArt
-      sourceRepository: acme-docker-local
+      sourceRepository: acme-docker-staging-local
       imageName: ubuntu
       imageTag: latest
 
