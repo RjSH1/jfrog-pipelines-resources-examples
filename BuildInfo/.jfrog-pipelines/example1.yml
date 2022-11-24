@@ -76,4 +76,4 @@ pipelines:
             - name: ACMEGit            
         execution:
           onExecute:
-            - 'curl -H "Authorization: token ${int_ACMEGit_token}" ${int_my_ACMEGit_url}/rate_limit'
+            - 'curl -H "Authorization: token ${int_ACMEGit_token}" ${int_ACMEGit_url}/rate_limit'
