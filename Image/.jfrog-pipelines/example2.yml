@@ -9,6 +9,8 @@ resources:
 
 pipelines:
   - name: Image_Pipeline
+    configuration:
+      jfrogCliVersion: 2   
     steps:
       - name: step_IMAGE_2
         type: PowerShell
