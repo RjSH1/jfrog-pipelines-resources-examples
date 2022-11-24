@@ -2,7 +2,7 @@ resources:
   - name: S_Bash_0436_FileSpec
     type: FileSpec
     configuration:
-      sourceArtifactory: art_v
+      sourceArtifactory: ACMEArt
       pattern: "*"
 
 
