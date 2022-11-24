@@ -5,7 +5,7 @@ resources:
       webhookName: ACMEIncomingWebhook
 
 pipelines:
-  - name: ExamplePipeline
+  - name: IncomingWebhookResource_Pipeline
     steps:
     - name: ExampleStep
       type: Bash
