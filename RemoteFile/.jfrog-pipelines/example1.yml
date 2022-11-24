@@ -1,0 +1,25 @@
+resources:
+  - name: RemoteFile_1
+    type: RemoteFile
+    configuration:
+      source: ACMEArt
+      fileLocation: example-repo-local/setup/help # optional
+      fileName: something.txt # optional
+	    fileDateTime: 19/12/22 # optional
+
+
+pipelines:
+  - name: RemoteFile_Pipeline
+    steps:
+      - name: REFILE_1
+        type: PowerShell
+        configuration:
+          nodePool: win_2019
+          integrations:
+            - name: ACMEArt
+          outputResources:
+            - name: RemoteFile_1
+        execution:
+          onExecute:
+            - write-output "executing step..."
+            - jfrog rt dl example-repo-local/setup/test.sh
