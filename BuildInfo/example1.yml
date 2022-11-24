@@ -2,14 +2,14 @@ resources:
   - name: myGitRepo
     type: GitRepo
     configuration:
-      gitProvider: my_github
+      gitProvider: ACMEGit
       path: RjSH1/jfrog-pipelines-resources-examples
       branches:
         include: master
   - name: myBuildInfo2
     type: BuildInfo
     configuration:
-      sourceArtifactory: art
+      sourceArtifactory: ACMEArt
       buildName: SampleApp
       # buildNumber: 1
       buildNumber: 1357924680
