@@ -3,7 +3,7 @@ resources:
     type: FileSpec
     configuration:
       sourceArtifactory: ACMEArt
-      aql: "{'repo': 'acme-docker-local'}"
+      aql: "{'repo': 'acme-staging-docker-local'}"
     
 pipelines:
   - name: PropertyDemo
