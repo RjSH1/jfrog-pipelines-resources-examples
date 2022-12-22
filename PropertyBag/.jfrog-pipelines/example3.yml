@@ -1,0 +1,35 @@
+resources:
+  - name: myResource
+    type: PropertyBag
+    configuration:
+      runNumber: 0
+
+pipelines:
+  - name: myPropertyBagPipeline
+    steps:
+      - name: input1
+        type: Bash
+        configuration:
+          outputResources:
+            - name: myResource
+        execution:
+          onExecute:
+            - write_output myResource runNumber=${run_number}
+            - echo "test"
+      - name: step1
+        type: Bash
+        configuration:
+          inputResources:
+            - name: myResource
+              newVersionOnly: true
+        execution:
+          onExecute:
+            - echo "test"
+      - name: step2
+        type: Bash
+        configuration:
+          inputResources:
+            - name: myResource
+        execution:
+          onExecute:
+            - echo "test"
