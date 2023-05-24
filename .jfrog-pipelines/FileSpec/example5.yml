@@ -1,5 +1,5 @@
 resources:
-  - name: Get_Files
+  - name: Get_File
     type: FileSpec
     configuration:
       sourceArtifactory: myArtifactory
@@ -12,7 +12,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: Get_Files
+            - name: Get_File
         execution:
           onExecute:
             - cat $HOME/.jfrog/logs/jfrog-cli*
