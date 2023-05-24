@@ -1,0 +1,26 @@
+resources:
+  - name: example2_bash
+    type: FileSpec
+    configuration:
+      sourceArtifactory: s_artifactory
+      pattern: "test-local/setup/"
+      recursive: false
+      limit: 1@3
+      sortBy:
+        - created
+      sortOrder: invalid
+      target: 'C:\Users\pipelines\Desktop\'
+
+pipelines:
+
+  - name: pipelines_FLSPEC_0013_bash
+    steps:
+      - name: step_FLSPEC_0013_bash
+        type: Bash
+        configuration:
+          #nodePool: win_2019
+          inputResources:
+            - name: example2_bash
+        execution:
+          onExecute:
+            - write-output "executing step..."
