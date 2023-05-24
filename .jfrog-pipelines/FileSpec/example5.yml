@@ -6,7 +6,7 @@ resources:
       aql: "{'repo': 'docker-local'}"
     
 pipelines:
-  - name: PropertyDemo
+  - name: PropertyDemo_1
     steps:
       - name: ArtifactoryFiles
         type: Bash
