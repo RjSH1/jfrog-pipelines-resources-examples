@@ -40,10 +40,10 @@ resources:
       jfrogPlatformProvider: myIntegration        # JFrog Platform Access Token integration
       repositories:
         - raj-test-repo-local
-      artifactPath:
-        include:
-          - default/*
-          - tools/*
+      #artifactPath:
+        #include:
+          #- default/*
+          #- tools/*
       buildOn:
         deployed: true
       branches:
