@@ -13,7 +13,8 @@ resources:
       buildOn:
         deployed: true
       branches:
-        include: artifactResource
+        include: master
+        #include: artifactResource
         #exclude: master
   - name: artifact_2
     type: Artifact
@@ -31,7 +32,8 @@ resources:
         cached: true
         deleted: true
       branches:
-        include: artifactResource
+        include: master
+        #include: artifactResource
   - name: artifact_1
     type: Artifact
     configuration:
