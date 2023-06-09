@@ -37,7 +37,7 @@ resources:
     configuration:
       jfrogPlatformProvider: myIntegration        # JFrog Platform Access Token integration
       repositories:
-        - test-repo-local
+        - raj-test-repo-local
       artifactPath:
         include:
           - default/*
