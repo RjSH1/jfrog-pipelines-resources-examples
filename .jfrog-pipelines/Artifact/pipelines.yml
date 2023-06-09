@@ -5,11 +5,11 @@ resources:
       jfrogPlatformProvider: myIntegration        # JFrog Platform Access Token integration
       repositories:
         - raj-test-repo
-      artifactPath:
-        include:
-          - tools/*
-        exclude:
-          - tools/exclude/*
+      #artifactPath:
+        #include:
+          #- tools/*
+        #exclude:
+          #- tools/exclude/*
       buildOn:
         deployed: true
       branches:
@@ -21,11 +21,11 @@ resources:
       jfrogPlatformProvider: myIntegration        # JFrog Platform Access Token integration
       repositories:
         - raj-test-repo-local
-      artifactPath:
-        include:
-          - tools/*
-        exclude:
-          - tools/exclude/*
+      #artifactPath:
+        #include:
+          #- tools/*
+        #exclude:
+          #- tools/exclude/*
       buildOn:
         deployed: true
         cached: true
