@@ -14,7 +14,7 @@ resources:
         deployed: true
       branches:
         include: artifactResource
-        exclude: master
+        #exclude: master
   - name: artifact_2
     type: Artifact
     configuration:
