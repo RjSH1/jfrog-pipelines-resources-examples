@@ -47,7 +47,7 @@ resources:
       buildOn:
         deployed: true
       branches:
-        include: artifactResource
+        include: master
 
 pipelines:
   - name: my_pipe_1
