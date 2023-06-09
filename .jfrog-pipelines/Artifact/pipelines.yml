@@ -1,19 +1,19 @@
 resources:
-  - name: artifact_test
-    type: Artifact
-    configuration:
-      jfrogPlatformProvider: myIntegration        # JFrog Platform Access Token integration
-      repositories:
-        - raj-test-repo
+  #- name: artifact_test
+    #type: Artifact
+    #configuration:
+      #jfrogPlatformProvider: myIntegration        # JFrog Platform Access Token integration
+      #repositories:
+        #- raj-test-repo
       #artifactPath:
         #include:
           #- tools/*
         #exclude:
           #- tools/exclude/*
-      buildOn:
-        deployed: true
-      branches:
-        include: master
+      #buildOn:
+        #deployed: true
+      #branches:
+        #include: master
         #include: artifactResource
         #exclude: master
   - name: artifact_2
