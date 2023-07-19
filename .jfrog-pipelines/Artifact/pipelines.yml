@@ -22,18 +22,18 @@ resources:
       jfrogPlatformProvider: myIntegration        # JFrog Platform Access Token integration
       repositories:
         - raj-test-repo-local
-      #artifactPath:
-        #include:
-          #- tools/*
-        #exclude:
-          #- tools/exclude/*
+      artifactPath:
+        include:
+          - tools/*
+        exclude:
+          - tools/exclude/*
       buildOn:
         deployed: true
         cached: true
         deleted: true
       branches:
         include: master
-        #include: artifactResource
+        include: artifactResource
   - name: artifact_1
     type: Artifact
     configuration:
