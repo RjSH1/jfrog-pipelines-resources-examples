@@ -19,7 +19,7 @@ resources:
   - name: artifact_2
     type: Artifact
     configuration:
-      jfrogPlatformProvider: myIntegration        # JFrog Platform Access Token integration
+      jfrogPlatformProvider: tokenIntegration        # JFrog Platform Access Token integration
       repositories:
         - test-target-local
       artifactPath:
@@ -38,7 +38,7 @@ resources:
   #- name: artifact_1
     #type: Artifact
     #configuration:
-      #jfrogPlatformProvider: myIntegration        # JFrog Platform Access Token integration
+      #jfrogPlatformProvider: tokenIntegration        # JFrog Platform Access Token integration
       #repositories:
         #- raj-test-repo-local
       #artifactPath:
